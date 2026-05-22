@@ -16,11 +16,12 @@
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
         <div id="nav-links" class="nav-links">
+          <a href="research.html">Research</a>
+          <a href="curriculum.html">Founder Curriculum</a>
           <a href="#map">Mental Models</a>
           <a href="#lifecycle">Lifecycle</a>
           <a href="#methods">Methods</a>
           <a href="#ai-native">AI-Native</a>
-          <a href="#curriculum">Curriculum</a>
           <a href="#plan">12 Weeks</a>
         </div>
       </nav>
@@ -29,14 +30,15 @@
     <main id="top">
       <section class="hero section-pad">
         <div class="hero-copy">
-          <p class="eyebrow">A practical founder education app</p>
+          <p class="eyebrow">Research + curriculum edition</p>
           <h1>Learn the general game of building a startup from zero.</h1>
           <p class="hero-lede">
-            A rigorous but practical operating system for entrepreneurship in the AI-native age: mental models, lifecycle, methods, product thinking, market analysis, founder skills, exercises, and a 12-week learning plan.
+            A rigorous but practical operating system for entrepreneurship in the AI-native age: mental models, startup methodology, market analysis, product thinking, founder skills, weekly exercises, and a 12-week execution curriculum.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#plan">Start the 12-week plan</a>
-            <a class="button secondary" href="#diagnostic">Run founder diagnostic</a>
+            <a class="button primary" href="curriculum.html">Open the founder curriculum</a>
+            <a class="button secondary" href="research.html">Read the research brief</a>
+            <a class="button secondary" href="#diagnostic">Run diagnostic</a>
           </div>
         </div>
         <aside class="hero-card" aria-label="Startup operating loop">
@@ -58,52 +60,49 @@
           <span>Early startups discover the business model before executing it.</span>
         </article>
         <article>
-          <strong>Evidence beats opinion</strong>
-          <span>Real usage, payment, retention, and referrals outrank compliments.</span>
+          <strong>Evidence beats output</strong>
+          <span>Usage, payment, retention, and referrals outrank AI-generated artifacts.</span>
         </article>
         <article>
           <strong>AI amplifies judgment</strong>
-          <span>Use AI to learn faster, not to outsource founder responsibility.</span>
+          <span>Use AI to learn faster, not to outsource customer contact or founder responsibility.</span>
         </article>
+      </section>
+
+      <section id="research-curriculum" class="section-pad muted-section">
+        <div class="section-heading">
+          <p class="eyebrow">New integrated material</p>
+          <h2>Deep Research report + personal founder curriculum</h2>
+          <p>The latest research and curriculum responses are now integrated as dedicated app pages and connected to the core operating system below.</p>
+        </div>
+        <div class="two-column">
+          <article class="deep-card">
+            <h3>Deep Research: AI-native startup building</h3>
+            <p>Separates durable startup principles, what AI changed, what AI did not change, hype patterns, beginner mistakes, and advanced founder practices.</p>
+            <a class="button primary" href="research.html">Open research report</a>
+          </article>
+          <article class="deep-card">
+            <h3>Personal founder curriculum</h3>
+            <p>Turns the research into a 12-week capability-building plan with exercises, AI usage rules, improvement signals, templates, and a founder operating system.</p>
+            <a class="button primary" href="curriculum.html">Open curriculum</a>
+          </article>
+        </div>
       </section>
 
       <section id="diagnostic" class="section-pad split-section">
         <div>
           <p class="eyebrow">Interactive diagnostic</p>
           <h2>Founder readiness check</h2>
-          <p>
-            Score yourself against the core capabilities needed to become an evidence-driven founder. Your answers stay in local browser storage.
-          </p>
+          <p>Score yourself against the core capabilities needed to become an evidence-driven founder. Your answers stay in local browser storage.</p>
         </div>
         <form id="diagnostic-form" class="diagnostic-card">
-          <label>
-            Customer exposure
-            <input type="range" min="0" max="5" value="1" name="customer" />
-          </label>
-          <label>
-            Market judgment
-            <input type="range" min="0" max="5" value="1" name="market" />
-          </label>
-          <label>
-            Product judgment
-            <input type="range" min="0" max="5" value="1" name="product" />
-          </label>
-          <label>
-            Sales comfort
-            <input type="range" min="0" max="5" value="1" name="sales" />
-          </label>
-          <label>
-            Technical literacy
-            <input type="range" min="0" max="5" value="1" name="technical" />
-          </label>
-          <label>
-            AI leverage
-            <input type="range" min="0" max="5" value="1" name="ai" />
-          </label>
-          <div class="score-box">
-            <span>Founder OS score</span>
-            <strong id="diagnostic-score">6 / 30</strong>
-          </div>
+          <label>Customer exposure <input type="range" min="0" max="5" value="1" name="customer" /></label>
+          <label>Market judgment <input type="range" min="0" max="5" value="1" name="market" /></label>
+          <label>Product judgment <input type="range" min="0" max="5" value="1" name="product" /></label>
+          <label>Sales comfort <input type="range" min="0" max="5" value="1" name="sales" /></label>
+          <label>Technical literacy <input type="range" min="0" max="5" value="1" name="technical" /></label>
+          <label>AI leverage <input type="range" min="0" max="5" value="1" name="ai" /></label>
+          <div class="score-box"><span>Founder OS score</span><strong id="diagnostic-score">6 / 30</strong></div>
         </form>
       </section>
 
@@ -111,9 +110,7 @@
         <div class="section-heading">
           <p class="eyebrow">Mental model map</p>
           <h2>Entrepreneurship is the conversion of uncertainty into organized value.</h2>
-          <p>
-            Use this map to reason from fundamentals instead of treating startups as idea contests.
-          </p>
+          <p>Use this map to reason from fundamentals instead of treating startups as idea contests.</p>
         </div>
         <div id="model-grid" class="card-grid"></div>
       </section>
@@ -137,8 +134,7 @@
           <p>Pick your current founder situation and the app will suggest the most relevant methodology.</p>
         </div>
         <div class="method-tools">
-          <label class="select-label">
-            Current situation
+          <label class="select-label">Current situation
             <select id="method-filter">
               <option value="early">I am still exploring problems</option>
               <option value="customer">I need to understand customers</option>
@@ -192,7 +188,7 @@
         <div class="section-heading">
           <p class="eyebrow">AI-native update</p>
           <h2>What changed, what stayed durable</h2>
-          <p>AI compresses research, prototyping, coding, operations, and support. It does not eliminate the need for customers, trust, distribution, pricing, and judgment.</p>
+          <p>AI compresses research, prototyping, coding, operations, and support. It does not eliminate customers, trust, distribution, pricing, retention, or judgment.</p>
         </div>
         <div id="ai-grid" class="ai-grid"></div>
       </section>
@@ -220,9 +216,7 @@
           <p>Check off each week as you complete its deliverable. Progress is saved locally.</p>
         </div>
         <div class="progress-shell">
-          <div class="progress-bar" aria-label="12-week plan completion">
-            <span id="progress-fill"></span>
-          </div>
+          <div class="progress-bar" aria-label="12-week plan completion"><span id="progress-fill"></span></div>
           <p id="progress-label">0 of 12 weeks complete</p>
         </div>
         <div id="week-grid" class="week-grid"></div>
