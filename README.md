@@ -16,12 +16,14 @@ An interactive web app based on a rigorous entrepreneurship tutorial for learnin
 - Local-storage progress tracking and reflection notebook
 - **Deep Research page**: durable startup principles, what AI changed, what AI did not change, hype patterns, beginner mistakes, and advanced founder practices
 - **Personal Founder Curriculum page**: 10 capabilities, correct learning order, exercises, AI usage rules, 12-week plan, templates, and founder operating system
+- **Applied Case Study page**: physiotherapist workflow pain point decomposed into modules, prioritized tasks, evidence gates, and framework-section mappings
 
 ## Pages
 
 - `index.html` — main interactive app
 - `research.html` — Deep Research synthesis on entrepreneurship in the AI-native age
 - `curriculum.html` — personal founder curriculum and practice system
+- `case-study.html` — applied physiotherapist case study mapped to the framework
 
 ## Tech stack
 
@@ -30,6 +32,7 @@ This is a dependency-free static web app:
 - `index.html`
 - `research.html`
 - `curriculum.html`
+- `case-study.html`
 - `styles.css`
 - `app.js`
 

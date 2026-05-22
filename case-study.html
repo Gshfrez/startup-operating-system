@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A real-world physiotherapist pain-point case study mapped to the Startup Operating System framework." />
+    <title>Physiotherapist Case Study | Startup Operating System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .case-note {
+        padding: 1rem 1.2rem;
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        background: rgba(235, 225, 207, 0.55);
+        color: var(--muted);
+      }
+      .case-note strong { color: var(--ink); }
+      .framework-table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+        border-radius: 1rem;
+        background: var(--surface-strong);
+      }
+      .framework-table th,
+      .framework-table td {
+        padding: 0.85rem;
+        border: 1px solid var(--line);
+        text-align: left;
+        vertical-align: top;
+      }
+      .framework-table th {
+        color: var(--accent);
+        background: rgba(235, 225, 207, 0.65);
+        font-size: 0.88rem;
+      }
+      .framework-table td { color: var(--muted); }
+      .framework-table a { color: var(--accent); font-weight: 800; }
+      .priority-pill {
+        display: inline-flex;
+        padding: 0.25rem 0.6rem;
+        border-radius: 999px;
+        background: var(--accent-3);
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 850;
+      }
+      .artifact-list {
+        columns: 2;
+        column-gap: 2rem;
+      }
+      @media (max-width: 720px) {
+        .framework-table { font-size: 0.9rem; }
+        .artifact-list { columns: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html"><span class="brand-mark">S</span><span>Startup OS</span></a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="curriculum.html">Founder Curriculum</a>
+          <a href="#hierarchy">Hierarchy</a>
+          <a href="#priority">Priority</a>
+          <a href="#framework-map">Framework Map</a>
+          <a href="#case-plan">12 Weeks</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-pad">
+        <div class="hero-copy">
+          <p class="eyebrow">Applied case study</p>
+          <h1>Physiotherapist workflow pain point → startup discovery system.</h1>
+          <p class="hero-lede">
+            This page turns one observed physiotherapist problem into a layered execution hierarchy, prioritized work plan, and direct mapping to the Startup Operating System framework.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#priority">Start with highest-priority work</a>
+            <a class="button secondary" href="#framework-map">Map tasks to the framework</a>
+            <a class="button secondary" href="index.html#plan">Compare with the core roadmap</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <h2>Case-study operating loop</h2>
+          <ol class="loop-list">
+            <li>State the observed pain in behavioral terms.</li>
+            <li>Decompose the workflow and assumption stack.</li>
+            <li>Interview physiotherapists, patients, and buyers.</li>
+            <li>Run the smallest manual or prototype test.</li>
+            <li>Measure behavior, willingness to pay, and retention.</li>
+            <li>Update the founder decision journal weekly.</li>
+          </ol>
+        </aside>
+      </section>
+
+      <section class="section-pad metrics-strip" aria-label="Founder acceleration answer">
+        <article><strong>Is this a strong way to learn?</strong><span>Yes: applied cases create faster judgment than passive study.</span></article>
+        <article><strong>Is it sufficient alone?</strong><span>No: the case must include real customer contact, sales attempts, and evidence gates.</span></article>
+        <article><strong>Best acceleration pattern</strong><span>One focused problem, weekly experiments, mentor review, written decisions, and deliberate leadership reps.</span></article>
+      </section>
+
+      <section class="section-pad muted-section">
+        <div class="section-heading">
+          <p class="eyebrow">Assumption notice</p>
+          <h2>Working problem thesis</h2>
+          <p>The referenced files <strong>project_context.md</strong> and <strong>my_current_thinking.md</strong> were not available in this workspace, so this page uses the following explicit placeholder thesis. Replace it with the exact observed pain when those files are available.</p>
+        </div>
+        <div class="two-column">
+          <article class="deep-card">
+            <h3>Observed pain hypothesis</h3>
+            <p>A physiotherapist loses high-value clinical and business time after or between appointments creating session notes, home exercise programs, follow-up messages, and adherence checks. This creates workflow drag, inconsistent patient follow-through, and reduced capacity for care quality or revenue-generating sessions.</p>
+            <p class="case-note"><strong>Human-in-the-loop boundary:</strong> the startup should not autonomously diagnose, prescribe, or replace clinical judgment. The initial wedge should support documentation, patient communication, adherence visibility, and administrative follow-through under physiotherapist control.</p>
+          </article>
+          <article class="deep-card">
+            <h3>Initial customer and buyer map</h3>
+            <ul class="check-list">
+              <li>User: physiotherapist doing notes, home exercise planning, patient follow-up, and progress review.</li>
+              <li>Buyer: solo clinic owner, clinic manager, practice principal, or department leader.</li>
+              <li>Beneficiary: patient who needs clearer instructions and better adherence support.</li>
+              <li>Trigger: overloaded appointment day, post-session admin backlog, missed patient follow-through, or poor visibility into home exercise adherence.</li>
+              <li>Alternatives: paper notes, EMR templates, generic exercise libraries, messaging apps, spreadsheets, manual reminders, and memory.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="hierarchy" class="section-pad">
+        <div class="section-heading">
+          <p class="eyebrow">Layered hierarchy</p>
+          <h2>Mission → outcomes → modules → components → tasks.</h2>
+          <p>Use this decomposition to avoid treating the idea as one vague project. Every module has a goal, objective, concrete tasks, artifacts, and evidence standard.</p>
+        </div>
+        <div class="card-grid">
+          <article class="model-card">
+            <span class="tag">Level 0</span>
+            <h3>Founder growth mission</h3>
+            <p>Become an evidence-driven founder by applying the framework to a real, high-trust workflow with real users, constraints, and commercial pressure.</p>
+          </article>
+          <article class="model-card">
+            <span class="tag">Level 1</span>
+            <h3>Startup project objective</h3>
+            <p>Discover whether physiotherapists have an urgent, budgeted, repeated workflow pain around documentation, home exercise follow-up, and patient adherence.</p>
+          </article>
+          <article class="model-card">
+            <span class="tag">Level 2</span>
+            <h3>Evidence target</h3>
+            <p>Move from anecdote to proof: repeated pain stories, current workarounds, budget owner, paid pilot willingness, repeated use, and measurable time saved.</p>
+          </article>
+        </div>
+
+        <div class="exercise-grid" style="margin-top: 1rem;">
+          <article class="exercise-card"><h3>M0. Personal founder OS<span>Growth</span></h3><p><strong>Goal:</strong> turn this project into a personal growth engine.</p><p><strong>Tasks:</strong> run the founder diagnostic, create decision journal, set weekly review, define learning KPIs, and schedule customer-contact blocks.</p><p><strong>Artifacts:</strong> diagnostic baseline, decision log, weekly review template, evidence scoreboard.</p></article>
+          <article class="exercise-card"><h3>M1. Domain immersion<span>Discovery</span></h3><p><strong>Goal:</strong> understand the physiotherapist workflow before proposing a solution.</p><p><strong>Tasks:</strong> observe sessions where possible, shadow admin work, collect workflow screenshots or descriptions, and define the exact moment the pain occurs.</p><p><strong>Evidence:</strong> repeated stories of time pressure, frustration, workarounds, and consequences.</p></article>
+          <article class="exercise-card"><h3>M2. Customer discovery<span>Customer</span></h3><p><strong>Goal:</strong> validate pain, frequency, cost, current alternatives, and buying process.</p><p><strong>Tasks:</strong> conduct 15–25 interviews with solo PTs, clinic owners, clinic staff, and patients; avoid pitching; score pain intensity and urgency.</p><p><strong>Artifacts:</strong> interview notes, pain evidence table, stakeholder map, quote bank.</p></article>
+          <article class="exercise-card"><h3>M3. JTBD and workflow map<span>Product</span></h3><p><strong>Goal:</strong> identify the job customers are hiring current tools or habits to perform.</p><p><strong>Tasks:</strong> map pre-session, in-session, post-session, home exercise, reminder, adherence, and reassessment flows.</p><p><strong>Artifacts:</strong> JTBD job stories, workflow map, failure-point map, time-cost estimate.</p></article>
+          <article class="exercise-card"><h3>M4. Market and stakeholder analysis<span>Market</span></h3><p><strong>Goal:</strong> determine whether the segment is reachable, budgeted, and structurally attractive.</p><p><strong>Tasks:</strong> segment solo clinics, small clinics, multi-location clinics, hospitals, and sports rehab; map buyer, user, champion, procurement, and trust barriers.</p><p><strong>Artifacts:</strong> market memo, segment scorecard, buyer-user-budget map.</p></article>
+          <article class="exercise-card"><h3>M5. Alternatives and competition<span>Competition</span></h3><p><strong>Goal:</strong> understand why existing tools are insufficient and where a wedge exists.</p><p><strong>Tasks:</strong> teardown EMR templates, exercise prescription tools, patient apps, messaging workflows, generic note tools, and manual workarounds.</p><p><strong>Artifacts:</strong> competitor matrix, substitute map, complaints log, switching-cost analysis.</p></article>
+          <article class="exercise-card"><h3>M6. Wedge and value proposition<span>Strategy</span></h3><p><strong>Goal:</strong> choose the smallest beachhead with urgent pain and a credible expansion path.</p><p><strong>Tasks:</strong> score wedges such as post-session documentation, home exercise follow-up, adherence tracking, discharge summaries, and patient progress reports.</p><p><strong>Artifacts:</strong> wedge scorecard, 10x value proposition, positioning statement.</p></article>
+          <article class="exercise-card"><h3>M7. MVP and pilot design<span>MVP</span></h3><p><strong>Goal:</strong> test behavior before building a full product.</p><p><strong>Tasks:</strong> design concierge, clickable prototype, or limited AI-assisted workflow; define success and failure thresholds; recruit 3–5 pilot clinics.</p><p><strong>Evidence:</strong> paid pilot, repeated weekly use, time saved, fewer missed follow-ups, and willingness to continue.</p></article>
+          <article class="exercise-card"><h3>M8. AI-native workflow and evals<span>AI</span></h3><p><strong>Goal:</strong> use AI where it improves speed or quality without outsourcing clinical responsibility.</p><p><strong>Tasks:</strong> prototype note summarization, exercise-plan drafting support, reminder copy, patient-check-in synthesis, and human review controls.</p><p><strong>Artifacts:</strong> prompt library, 100-case eval set, failure-mode checklist, privacy/trust review.</p></article>
+          <article class="exercise-card"><h3>M9. Founder-led sales and GTM<span>Sales</span></h3><p><strong>Goal:</strong> discover whether the pain converts into buying behavior.</p><p><strong>Tasks:</strong> write outreach, run discovery calls, ask for pilot commitment, test pricing, track objections, and document sales cycle friction.</p><p><strong>Artifacts:</strong> outreach tracker, call script, objection library, pricing memo, pilot agreement draft.</p></article>
+          <article class="exercise-card"><h3>M10. Measurement and iteration<span>Learning</span></h3><p><strong>Goal:</strong> turn every week into better judgment and better product direction.</p><p><strong>Tasks:</strong> review interviews, pilot behavior, time saved, patient adherence signals, retention, and willingness to pay.</p><p><strong>Artifacts:</strong> weekly evidence review, decision journal, pivot/persevere criteria, experiment backlog.</p></article>
+          <article class="exercise-card"><h3>M11. Scale and company OS<span>Scale</span></h3><p><strong>Goal:</strong> scale only after repeatable value is visible.</p><p><strong>Tasks:</strong> design onboarding, support, compliance workflow, team cadence, quality review, product roadmap, and repeatable channel tests.</p><p><strong>Evidence:</strong> retention, repeatable onboarding, consistent outcomes, and known bottleneck.</p></article>
+        </div>
+      </section>
+
+      <section id="priority" class="section-pad muted-section">
+        <div class="section-heading">
+          <p class="eyebrow">Importance and urgency</p>
+          <h2>Do the risk-reducing work before the product-building work.</h2>
+          <p>The highest-priority work is not the most exciting work. It is the work that can falsify the project fastest or expose the right wedge.</p>
+        </div>
+        <div class="two-column">
+          <article class="deep-card">
+            <h3><span class="priority-pill">P0 — Now</span> existential evidence</h3>
+            <ul class="check-list">
+              <li>Replace the placeholder pain thesis with the exact observed event, quote, and workflow moment.</li>
+              <li>Write the assumption stack: customer, pain, frequency, cost, budget, access, trust, product feasibility, and repeat usage.</li>
+              <li>Interview 5 physiotherapists without pitching and document past behavior only.</li>
+              <li>Map current alternatives and workarounds before inventing features.</li>
+              <li>Define the riskiest assumption and one test that can fail within 7 days.</li>
+            </ul>
+          </article>
+          <article class="deep-card">
+            <h3><span class="priority-pill">P1 — This week</span> segment and wedge</h3>
+            <ul class="check-list">
+              <li>Run 10 more interviews across solo PTs, small clinics, and clinic owners.</li>
+              <li>Score segments on pain, urgency, budget, reachability, regulation/trust burden, and adoption friction.</li>
+              <li>Teardown 10 direct and indirect alternatives.</li>
+              <li>Select one wedge and write a 10x value proposition.</li>
+              <li>Draft a concierge pilot and outreach message.</li>
+            </ul>
+          </article>
+          <article class="deep-card">
+            <h3><span class="priority-pill">P2 — Weeks 3–6</span> pilot learning</h3>
+            <ul class="check-list">
+              <li>Recruit 3–5 pilot users or clinics.</li>
+              <li>Run manual or semi-automated workflow support before full automation.</li>
+              <li>Measure time saved, follow-up completion, repeated usage, and willingness to pay.</li>
+              <li>Create AI eval cases from real notes, edge cases, and failure modes after appropriate consent and de-identification.</li>
+              <li>Review pilot behavior weekly and decide whether to persevere, narrow, or pivot.</li>
+            </ul>
+          </article>
+          <article class="deep-card">
+            <h3><span class="priority-pill">P3 — Later</span> scale candidates</h3>
+            <ul class="check-list">
+              <li>Build integrations only after the workflow is proven manually.</li>
+              <li>Automate only stable, repeated, well-understood steps.</li>
+              <li>Test repeatable acquisition channels after clear positioning.</li>
+              <li>Create onboarding, support, security, and quality-review routines.</li>
+              <li>Hire or partner only after the bottleneck is known.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="framework-map" class="section-pad">
+        <div class="section-heading">
+          <p class="eyebrow">Framework mapping</p>
+          <h2>Each project task goes to the corresponding Startup OS section.</h2>
+          <p>This map prevents category errors: discovery tasks belong in customer/problem discovery; AI reliability tasks belong in AI-native evals; commercialization tasks belong in sales and GTM.</p>
+        </div>
+        <div class="deep-card" style="overflow-x: auto;">
+          <table class="framework-table">
+            <thead>
+              <tr><th>Work / task</th><th>Category</th><th>Priority</th><th>Mapped section</th><th>Why this is the correct section</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Run founder readiness baseline and weekly review cadence</td><td>Personal growth OS</td><td>P0</td><td><a href="index.html#diagnostic">Founder readiness check</a> + <a href="curriculum.html#templates">Founder OS templates</a></td><td>This is about improving the founder's operating system before evaluating the startup idea.</td></tr>
+              <tr><td>Write observed-pain thesis and assumption stack</td><td>Opportunity / uncertainty</td><td>P0</td><td><a href="index.html#map">Mental model map</a></td><td>The core mental model is converting uncertainty into explicit, testable assumptions.</td></tr>
+              <tr><td>Interview physiotherapists about past behavior, not hypothetical interest</td><td>Problem discovery</td><td>P0</td><td><a href="index.html#lifecycle">Startup lifecycle: Problem discovery</a> + <a href="index.html#exercises">15-interview sprint</a></td><td>The task seeks behavioral evidence of pain, workarounds, frequency, and cost.</td></tr>
+              <tr><td>Map buyer, user, champion, patient beneficiary, and budget owner</td><td>Customer discovery</td><td>P0</td><td><a href="index.html#lifecycle">Customer discovery</a> + <a href="index.html#market-product">Market checklist</a></td><td>Physiotherapist user and clinic buyer may differ, so stakeholder structure must be explicit.</td></tr>
+              <tr><td>Create JTBD workflow map for post-session admin and home exercise follow-up</td><td>Product discovery</td><td>P1</td><td><a href="index.html#methods">Jobs-to-be-Done</a> + <a href="index.html#market-product">Product checklist</a></td><td>JTBD is the right method for understanding the progress customers seek in a specific situation.</td></tr>
+              <tr><td>Segment solo clinics, small clinics, multi-location clinics, and institutional settings</td><td>Market research</td><td>P1</td><td><a href="index.html#lifecycle">Market research</a></td><td>This task evaluates reachability, urgency, budget, and structural attractiveness by segment.</td></tr>
+              <tr><td>Teardown EMRs, exercise libraries, messaging workflows, and manual workarounds</td><td>Competition / alternatives</td><td>P1</td><td><a href="index.html#lifecycle">Competitor analysis</a> + <a href="index.html#exercises">Alternative teardown</a></td><td>Competitors include substitutes and internal workarounds, not only software companies.</td></tr>
+              <tr><td>Choose one beachhead wedge</td><td>Strategy</td><td>P1</td><td><a href="index.html#lifecycle">Wedge selection</a> + <a href="index.html#methods">Wedge Strategy</a></td><td>The project needs a narrow entry point before building a broad clinic operating platform.</td></tr>
+              <tr><td>Design concierge pilot or clickable prototype</td><td>MVP / experiment</td><td>P1</td><td><a href="index.html#lifecycle">MVP</a> + <a href="index.html#exercises">Riskiest assumption test</a></td><td>The task tests behavior with the smallest credible workflow, not a mini full product.</td></tr>
+              <tr><td>Prototype AI-assisted note summarization, follow-up drafting, or adherence synthesis</td><td>AI-native workflow</td><td>P2</td><td><a href="index.html#ai-native">AI-native update</a></td><td>AI is appropriate as leverage for research, drafting, operations, and workflow support.</td></tr>
+              <tr><td>Build a 100-case eval set from realistic and adversarial workflow examples</td><td>AI reliability</td><td>P2</td><td><a href="index.html#methods">AI Evals</a> + <a href="index.html#exercises">Eval set builder</a></td><td>Healthcare-adjacent workflows require measured reliability rather than demo confidence.</td></tr>
+              <tr><td>Define privacy, consent, de-identification, and human-review boundaries</td><td>Trust / risk</td><td>P2</td><td><a href="research.html">Research: what AI has not changed</a> + <a href="index.html#market-product">Market checklist</a></td><td>Trust, reliability, privacy, and accountability are adoption blockers in high-trust domains.</td></tr>
+              <tr><td>Write outreach, run discovery calls, ask for pilot commitment, and test pricing</td><td>Sales / GTM</td><td>P2</td><td><a href="index.html#lifecycle">Go-to-market</a> + <a href="index.html#exercises">Founder-led sales reps</a></td><td>Commercial behavior is required to separate urgency from polite interest.</td></tr>
+              <tr><td>Measure paid pilot, repeated usage, time saved, and continued willingness to use</td><td>Validation</td><td>P2</td><td><a href="index.html#lifecycle">Validation</a></td><td>Behavioral validation is stronger than compliments, surveys, and demo enthusiasm.</td></tr>
+              <tr><td>Create onboarding, support, quality review, and operating cadence</td><td>Company building</td><td>P3</td><td><a href="index.html#lifecycle">Company building</a></td><td>These systems matter after repeated value is visible and the bottleneck is known.</td></tr>
+              <tr><td>Run a full 12-week case-study cycle</td><td>Founder curriculum</td><td>P0–P3</td><td><a href="index.html#plan">12-week roadmap</a> + <a href="curriculum.html#twelve-weeks">Personal 12-week curriculum</a></td><td>The case study becomes the practical vehicle for mastering the tutorial through evidence-producing reps.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="case-plan" class="section-pad muted-section">
+        <div class="section-heading">
+          <p class="eyebrow">12-week applied plan</p>
+          <h2>Use the physiotherapist case as the practice vehicle.</h2>
+          <p>Each week produces a concrete artifact and a decision. Reading and AI-generated analysis do not count unless they change what you do next.</p>
+        </div>
+        <div class="week-grid">
+          <article class="week-card"><small>Week 1</small><h3>Problem thesis and founder OS</h3><p>Exact observed-pain memo, assumption stack, diagnostic baseline, decision journal, interview guide.</p></article>
+          <article class="week-card"><small>Week 2</small><h3>Customer discovery sprint</h3><p>5–10 physiotherapist interviews, pain evidence table, current alternatives list, no-pitch self-critique.</p></article>
+          <article class="week-card"><small>Week 3</small><h3>JTBD and workflow mapping</h3><p>Workflow map, job stories, failure-point map, time-cost estimate, patient follow-through hypotheses.</p></article>
+          <article class="week-card"><small>Week 4</small><h3>Market and stakeholder memo</h3><p>Segment scorecard, buyer/user/champion map, channel hypotheses, trust and adoption risks.</p></article>
+          <article class="week-card"><small>Week 5</small><h3>Alternatives teardown</h3><p>10 direct/indirect alternative teardowns, complaint patterns, switching costs, wedge candidates.</p></article>
+          <article class="week-card"><small>Week 6</small><h3>Wedge and MVP design</h3><p>Wedge scorecard, 10x value proposition, riskiest assumption, concierge or prototype experiment card.</p></article>
+          <article class="week-card"><small>Week 7</small><h3>Prototype and pilot setup</h3><p>Manual workflow, clickable prototype or AI-assisted draft flow; success thresholds and pilot recruitment list.</p></article>
+          <article class="week-card"><small>Week 8</small><h3>Founder-led sales</h3><p>20 outreach messages, 10 discovery or sales calls, objection library, pilot commitment asks, pricing memo.</p></article>
+          <article class="week-card"><small>Week 9</small><h3>Pilot execution</h3><p>3–5 pilot users, weekly usage log, time-saved measurement, before/after workflow analysis.</p></article>
+          <article class="week-card"><small>Week 10</small><h3>AI evals and trust controls</h3><p>100-case eval set, failure-mode checklist, human-review policy, privacy and consent boundary memo.</p></article>
+          <article class="week-card"><small>Week 11</small><h3>Validation decision</h3><p>Evidence review, retention signal, willingness-to-pay analysis, pivot/persevere decision journal entry.</p></article>
+          <article class="week-card"><small>Week 12</small><h3>Integration dossier</h3><p>Full startup discovery dossier, roadmap, next experiments, advisor feedback request, next 12-week plan.</p></article>
+        </div>
+      </section>
+
+      <section class="section-pad">
+        <div class="section-heading">
+          <p class="eyebrow">Evidence gates</p>
+          <h2>Advance only when the evidence changes quality.</h2>
+        </div>
+        <div class="card-grid compact">
+          <article class="skill-card"><span class="tag">Gate 1</span><h3>Problem evidence</h3><p>At least 10 independent conversations show repeated pain, current workarounds, and a meaningful cost of inaction.</p></article>
+          <article class="skill-card"><span class="tag">Gate 2</span><h3>Wedge signal</h3><p>One segment scores highest on pain, urgency, budget, reachability, and adoption feasibility.</p></article>
+          <article class="skill-card"><span class="tag">Gate 3</span><h3>MVP behavior</h3><p>Users complete the workflow repeatedly without founder pressure and report a clear before/after improvement.</p></article>
+          <article class="skill-card"><span class="tag">Gate 4</span><h3>Commercial signal</h3><p>A buyer commits to a paid pilot, budget discussion, renewal, or concrete next step with decision authority.</p></article>
+          <article class="skill-card"><span class="tag">Gate 5</span><h3>Trust signal</h3><p>Users accept the human-review, privacy, security, and accountability model for the intended workflow.</p></article>
+          <article class="skill-card"><span class="tag">Gate 6</span><h3>Repeatability</h3><p>The same value proposition, onboarding path, and support process work for multiple similar customers.</p></article>
+          <article class="skill-card"><span class="tag">Gate 7</span><h3>Founder learning</h3><p>Your memos become more specific, behavioral, commercial, evidence-based, and decision-oriented.</p></article>
+          <article class="skill-card"><span class="tag">Gate 8</span><h3>Scale readiness</h3><p>Retention, onboarding, and unit economics look plausible enough to test repeatable acquisition.</p></article>
+        </div>
+      </section>
+
+      <section class="section-pad muted-section">
+        <div class="section-heading">
+          <p class="eyebrow">Deliverable library</p>
+          <h2>Artifacts to produce during the case study</h2>
+        </div>
+        <article class="deep-card">
+          <ul class="check-list artifact-list">
+            <li>Observed pain memo</li>
+            <li>Assumption stack</li>
+            <li>Founder diagnostic baseline</li>
+            <li>Interview guide</li>
+            <li>Interview notes and quote bank</li>
+            <li>Pain evidence table</li>
+            <li>Stakeholder map</li>
+            <li>JTBD job stories</li>
+            <li>Workflow and failure-point map</li>
+            <li>Market attractiveness scorecard</li>
+            <li>Competitor and substitute teardown</li>
+            <li>Switching-cost analysis</li>
+            <li>Wedge scorecard</li>
+            <li>10x value proposition</li>
+            <li>MVP experiment card</li>
+            <li>Concierge pilot script</li>
+            <li>AI prompt library</li>
+            <li>AI eval set</li>
+            <li>Trust and privacy boundary memo</li>
+            <li>Outreach tracker</li>
+            <li>Objection library</li>
+            <li>Pricing memo</li>
+            <li>Weekly evidence review</li>
+            <li>Pivot/persevere decision journal</li>
+            <li>Startup discovery dossier</li>
+            <li>Next 12-week plan</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Physiotherapist Case Study — Startup Operating System</p>
+      <a href="index.html">Back to app</a>
+    </footer>
+  </body>
+</html>
