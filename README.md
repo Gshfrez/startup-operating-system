@@ -14,12 +14,22 @@ An interactive web app based on a rigorous entrepreneurship tutorial for learnin
 - Interactive 12-week learning roadmap
 - Glossary search
 - Local-storage progress tracking and reflection notebook
+- **Deep Research page**: durable startup principles, what AI changed, what AI did not change, hype patterns, beginner mistakes, and advanced founder practices
+- **Personal Founder Curriculum page**: 10 capabilities, correct learning order, exercises, AI usage rules, 12-week plan, templates, and founder operating system
+
+## Pages
+
+- `index.html` — main interactive app
+- `research.html` — Deep Research synthesis on entrepreneurship in the AI-native age
+- `curriculum.html` — personal founder curriculum and practice system
 
 ## Tech stack
 
 This is a dependency-free static web app:
 
 - `index.html`
+- `research.html`
+- `curriculum.html`
 - `styles.css`
 - `app.js`
 
@@ -46,22 +56,24 @@ After pushing to GitHub:
 3. Push to `main`.
 4. The workflow will publish the static app.
 
-## Create a public GitHub repo and push
+For a plain static site, GitHub Pages can also deploy from branch:
 
-```bash
-gh repo create startup-operating-system --public --source=. --remote=origin --push
-```
+1. Go to **Settings → Pages**.
+2. Choose **Deploy from a branch**.
+3. Select `main` and `/root`.
+4. Save.
 
-Or create a public empty repository in the GitHub UI, then run:
+## Founder learning standard
 
-```bash
-git init
-git add .
-git commit -m "Build startup operating system web app"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/startup-operating-system.git
-git push -u origin main
-```
+A serious week produces evidence, not only notes:
+
+- real customer/problem conversations or attempts
+- market or product memo
+- competitor/product teardowns
+- MVP or experiment design
+- decision journal entry
+- insight log update
+- weekly review
 
 ## License
 
