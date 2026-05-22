@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An interactive entrepreneurship and AI-native startup learning operating system." />
+    <title>Startup Operating System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Startup OS home">
+          <span class="brand-mark">S</span>
+          <span>Startup OS</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <div id="nav-links" class="nav-links">
+          <a href="#map">Mental Models</a>
+          <a href="#lifecycle">Lifecycle</a>
+          <a href="#methods">Methods</a>
+          <a href="#ai-native">AI-Native</a>
+          <a href="#curriculum">Curriculum</a>
+          <a href="#plan">12 Weeks</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-pad">
+        <div class="hero-copy">
+          <p class="eyebrow">A practical founder education app</p>
+          <h1>Learn the general game of building a startup from zero.</h1>
+          <p class="hero-lede">
+            A rigorous but practical operating system for entrepreneurship in the AI-native age: mental models, lifecycle, methods, product thinking, market analysis, founder skills, exercises, and a 12-week learning plan.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#plan">Start the 12-week plan</a>
+            <a class="button secondary" href="#diagnostic">Run founder diagnostic</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Startup operating loop">
+          <h2>Operating Loop</h2>
+          <ol class="loop-list">
+            <li>Observe reality</li>
+            <li>Form hypotheses</li>
+            <li>Test with customers</li>
+            <li>Measure behavior</li>
+            <li>Decide and build</li>
+            <li>Sell, learn, repeat</li>
+          </ol>
+        </aside>
+      </section>
+
+      <section class="section-pad metrics-strip" aria-label="Core founder reminders">
+        <article>
+          <strong>Search before scale</strong>
+          <span>Early startups discover the business model before executing it.</span>
+        </article>
+        <article>
+          <strong>Evidence beats opinion</strong>
+          <span>Real usage, payment, retention, and referrals outrank compliments.</span>
+        </article>
+        <article>
+          <strong>AI amplifies judgment</strong>
+          <span>Use AI to learn faster, not to outsource founder responsibility.</span>
+        </article>
+      </section>
+
+      <section id="diagnostic" class="section-pad split-section">
+        <div>
+          <p class="eyebrow">Interactive diagnostic</p>
+          <h2>Founder readiness check</h2>
+          <p>
+            Score yourself against the core capabilities needed to become an evidence-driven founder. Your answers stay in local browser storage.
+          </p>
+        </div>
+        <form id="diagnostic-form" class="diagnostic-card">
+          <label>
+            Customer exposure
+            <input type="range" min="0" max="5" value="1" name="customer" />
+          </label>
+          <label>
+            Market judgment
+            <input type="range" min="0" max="5" value="1" name="market" />
+          </label>
+          <label>
+            Product judgment
+            <input type="range" min="0" max="5" value="1" name="product" />
+          </label>
+          <label>
+            Sales comfort
+            <input type="range" min="0" max="5" value="1" name="sales" />
+          </label>
+          <label>
+            Technical literacy
+            <input type="range" min="0" max="5" value="1" name="technical" />
+          </label>
+          <label>
+            AI leverage
+            <input type="range" min="0" max="5" value="1" name="ai" />
+          </label>
+          <div class="score-box">
+            <span>Founder OS score</span>
+            <strong id="diagnostic-score">6 / 30</strong>
+          </div>
+        </form>
+      </section>
+
+      <section id="map" class="section-pad">
+        <div class="section-heading">
+          <p class="eyebrow">Mental model map</p>
+          <h2>Entrepreneurship is the conversion of uncertainty into organized value.</h2>
+          <p>
+            Use this map to reason from fundamentals instead of treating startups as idea contests.
+          </p>
+        </div>
+        <div id="model-grid" class="card-grid"></div>
+      </section>
+
+      <section id="lifecycle" class="section-pad muted-section">
+        <div class="section-heading">
+          <p class="eyebrow">Startup lifecycle</p>
+          <h2>From founder-market fit to company building</h2>
+          <p>Select a stage to see the goal, evidence, traps, and exercises.</p>
+        </div>
+        <div class="timeline-shell">
+          <div id="stage-list" class="stage-list" role="tablist" aria-label="Startup stages"></div>
+          <article id="stage-detail" class="stage-detail" aria-live="polite"></article>
+        </div>
+      </section>
+
+      <section id="methods" class="section-pad">
+        <div class="section-heading">
+          <p class="eyebrow">Method chooser</p>
+          <h2>Core methodologies and when to use them</h2>
+          <p>Pick your current founder situation and the app will suggest the most relevant methodology.</p>
+        </div>
+        <div class="method-tools">
+          <label class="select-label">
+            Current situation
+            <select id="method-filter">
+              <option value="early">I am still exploring problems</option>
+              <option value="customer">I need to understand customers</option>
+              <option value="product">I need to design or test an MVP</option>
+              <option value="market">I need to evaluate a market</option>
+              <option value="scale">I am trying to scale something working</option>
+              <option value="ai">I am building with AI</option>
+            </select>
+          </label>
+          <div id="method-recommendation" class="recommendation-card"></div>
+        </div>
+        <div id="method-grid" class="card-grid compact"></div>
+      </section>
+
+      <section id="market-product" class="section-pad muted-section">
+        <div class="section-heading">
+          <p class="eyebrow">Market and product thinking</p>
+          <h2>Diagnose demand before you overbuild.</h2>
+        </div>
+        <div class="two-column">
+          <article class="deep-card">
+            <h3>Market analysis checklist</h3>
+            <ul class="check-list">
+              <li>TAM/SAM/SOM and realistic reachable market</li>
+              <li>Market timing and why-now catalyst</li>
+              <li>Market pull versus technology push</li>
+              <li>Buyer, user, champion, budget owner</li>
+              <li>Willingness to pay and switching costs</li>
+              <li>Distribution channels and trust barriers</li>
+              <li>Competition, substitutes, and moats</li>
+              <li>Regulatory, privacy, and compliance constraints</li>
+            </ul>
+          </article>
+          <article class="deep-card">
+            <h3>Product thinking checklist</h3>
+            <ul class="check-list">
+              <li>Identify real pain through past behavior</li>
+              <li>Distinguish painkiller from vitamin</li>
+              <li>Define ICP, buyer, user, and use cases</li>
+              <li>Design MVPs around riskiest assumptions</li>
+              <li>Prioritize features by learning and value</li>
+              <li>Use feedback without obeying every request</li>
+              <li>Track activation, retention, referral, revenue</li>
+              <li>Avoid fake progress and vanity metrics</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="ai-native" class="section-pad">
+        <div class="section-heading">
+          <p class="eyebrow">AI-native update</p>
+          <h2>What changed, what stayed durable</h2>
+          <p>AI compresses research, prototyping, coding, operations, and support. It does not eliminate the need for customers, trust, distribution, pricing, and judgment.</p>
+        </div>
+        <div id="ai-grid" class="ai-grid"></div>
+      </section>
+
+      <section id="curriculum" class="section-pad muted-section">
+        <div class="section-heading">
+          <p class="eyebrow">Founder skill curriculum</p>
+          <h2>Build capability like an operator, not a spectator.</h2>
+        </div>
+        <div id="skill-grid" class="card-grid compact"></div>
+      </section>
+
+      <section id="exercises" class="section-pad">
+        <div class="section-heading">
+          <p class="eyebrow">Practical exercises</p>
+          <h2>Turn theory into judgment through structured reps.</h2>
+        </div>
+        <div id="exercise-grid" class="exercise-grid"></div>
+      </section>
+
+      <section id="plan" class="section-pad muted-section">
+        <div class="section-heading">
+          <p class="eyebrow">12-week roadmap</p>
+          <h2>A focused learning plan for beginner founders</h2>
+          <p>Check off each week as you complete its deliverable. Progress is saved locally.</p>
+        </div>
+        <div class="progress-shell">
+          <div class="progress-bar" aria-label="12-week plan completion">
+            <span id="progress-fill"></span>
+          </div>
+          <p id="progress-label">0 of 12 weeks complete</p>
+        </div>
+        <div id="week-grid" class="week-grid"></div>
+      </section>
+
+      <section id="glossary" class="section-pad">
+        <div class="section-heading">
+          <p class="eyebrow">Glossary</p>
+          <h2>Startup vocabulary without the fog.</h2>
+          <div class="search-box">
+            <label for="glossary-search">Search terms</label>
+            <input id="glossary-search" type="search" placeholder="Try MVP, CAC, PMF, wedge, eval..." />
+          </div>
+        </div>
+        <div id="glossary-grid" class="glossary-grid"></div>
+      </section>
+
+      <section id="notebook" class="section-pad muted-section">
+        <div class="section-heading">
+          <p class="eyebrow">Reflection notebook</p>
+          <h2>Capture learning from customer contact and experiments.</h2>
+          <p>Use this lightweight notebook for founder reflections. It persists in local storage only.</p>
+        </div>
+        <form class="notebook-card" id="note-form">
+          <textarea id="note-input" rows="5" placeholder="What did you learn from reality this week?"></textarea>
+          <button class="button primary" type="submit">Save note</button>
+        </form>
+        <div id="notes-list" class="notes-list"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Startup Operating System — built as a general entrepreneurship learning app for the AI-native age.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
